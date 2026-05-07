@@ -60,6 +60,10 @@ The [`idea-refine`](idea-refine/) skill also includes supporting scripts and ref
 
 Fork or copy skills and adjust `description` in frontmatter so your agent triggers the right skill for your stack and conventions.
 
+## Courtesy
+
+Courtesy and inspiration to **Addy Osmani** — Director, Google Cloud AI; best-selling author; speaker on AI, DX, and UX.
+
 ## License
 
 No license file is bundled by default. Add one (e.g. MIT) if you want explicit terms for reuse.
