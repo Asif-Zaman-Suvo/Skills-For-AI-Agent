@@ -1,16 +1,16 @@
 # Graph Report - Skills For AI Agent  (2026-05-10)
 
 ## Corpus Check
-- 28 files · ~38,452 words
+- 28 files · ~38,464 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 732 nodes · 704 edges · 29 communities
+- 740 nodes · 716 edges · 29 communities
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `1b1b0f0a`
+- Built from commit: `36786dca`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -139,36 +139,36 @@ Cohesion: 0.1
 Nodes (19): code:block1 (DETECT ──→ FETCH ──→ IMPLEMENT ──→ CITE), code:block2 (package.json    → Node/React/Vue/Angular/Svelte), code:block3 (STACK DETECTED:), code:block4 (BAD:  Fetch the React homepage), code:block5 (CONFLICT DETECTED:), code:typescript (// React 19 form handling with useActionState), code:block7 (I'm using useActionState instead of manual useState for the), code:block8 (UNVERIFIED: I could not find official documentation for this) (+11 more)
 
 ### Community 19 - "Community 19"
-Cohesion: 0.11
-Nodes (17): Example 1: Vague Early-Stage Concept (Full 3-Phase Session), Example 2: Feature Idea Within an Existing Product (Codebase-Aware), Example 3: Process/Workflow Idea (Non-Product), Ideation Session Examples, Key Assumptions to Validate, MVP Scope, Not Doing (and Why), Open Questions (+9 more)
+Cohesion: 0.13
+Nodes (18): code:block1 (Host personal), code:bash (# 1. Create README), code:bash (echo "# <REPO_NAME>" >> README.md), Command sequence, Commands to Run, Example, Example (filled in), GitHub Repository Initialization (+10 more)
 
 ### Community 20 - "Community 20"
 Cohesion: 0.11
-Nodes (17): 1. Surface Assumptions, 2. Manage Confusion Actively, 3. Push Back When Warranted, 4. Enforce Simplicity, 5. Maintain Scope Discipline, 6. Verify, Don't Assume, code:block1 (Task arrives), code:block2 (ASSUMPTIONS I'M MAKING:) (+9 more)
+Nodes (17): Example 1: Vague Early-Stage Concept (Full 3-Phase Session), Example 2: Feature Idea Within an Existing Product (Codebase-Aware), Example 3: Process/Workflow Idea (Non-Product), Ideation Session Examples, Key Assumptions to Validate, MVP Scope, Not Doing (and Why), Open Questions (+9 more)
 
 ### Community 21 - "Community 21"
+Cohesion: 0.11
+Nodes (17): 1. Surface Assumptions, 2. Manage Confusion Actively, 3. Push Back When Warranted, 4. Enforce Simplicity, 5. Maintain Scope Discipline, 6. Verify, Don't Assume, code:block1 (Task arrives), code:block2 (ASSUMPTIONS I'M MAKING:) (+9 more)
+
+### Community 22 - "Community 22"
 Cohesion: 0.12
 Nodes (16): Anti-patterns to Avoid, code:bash (# Optional: Initialize the ideas directory), code:markdown (# [Idea Name]), Detailed Instructions, How It Works, Idea Refine, Output, Phase 1: Understand & Expand (Divergent) (+8 more)
 
-### Community 22 - "Community 22"
+### Community 23 - "Community 23"
 Cohesion: 0.14
 Nodes (13): 1. Analyze Before Writing, 2. Test at the Right Level, 3. Follow the Prove-It Pattern for Bugs, 4. Write Descriptive Tests, 5. Cover These Scenarios, Approach, code:block1 (Pure logic, no I/O          → Unit test), code:block2 (describe('[Module/Function name]', () => {) (+5 more)
 
-### Community 23 - "Community 23"
+### Community 24 - "Community 24"
 Cohesion: 0.15
 Nodes (13): code:block10 (Preference order (most to least preferred):), code:typescript (it('marks overdue tasks when deadline has passed', () => {), code:typescript (// Good: Each test verifies one behavior), code:typescript (// Good: Reads like a specification), code:typescript (// Good: Tests what the function does (state-based)), code:typescript (// DAMP: Each test is self-contained and readable), DAMP Over DRY in Tests, Name Tests Descriptively (+5 more)
 
-### Community 24 - "Community 24"
+### Community 25 - "Community 25"
 Cohesion: 0.15
 Nodes (12): 1. Input Handling, 2. Authentication & Authorization, 3. Data Protection, 4. Infrastructure, 5. Third-Party Integrations, code:markdown (## Security Audit Report), Composition, Output Format (+4 more)
 
-### Community 25 - "Community 25"
+### Community 26 - "Community 26"
 Cohesion: 0.17
 Nodes (11): 1. User Value, 2. Feasibility, 3. Differentiation, Assumption Audit, Core Evaluation Dimensions, Decision Framework, Might Be True (Nice to Have), Must Be True (Dealbreakers) (+3 more)
-
-### Community 26 - "Community 26"
-Cohesion: 0.18
-Nodes (10): code:bash (# 1. Create README), code:block2 (Host personal), code:bash (echo "# <REPO_NAME>" >> README.md), Commands to Run, Example (filled in), How to Use in Cursor, Skill: GitHub Repo Initializer, SSH Config Prerequisite (+2 more)
 
 ### Community 27 - "Community 27"
 Cohesion: 0.22
@@ -185,7 +185,7 @@ Nodes (8): Analogous Inspiration, Constraint-Based Ideation, First Principles Th
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Test-Driven Development` connect `Community 11` to `Community 23`?**
+- **Why does `Test-Driven Development` connect `Community 11` to `Community 24`?**
   _High betweenness centrality (0.003) - this node is a cross-community bridge._
 - **What connects `Quick start`, `What’s included`, `code:block1 (├── README.md)` to the rest of the system?**
   _445 weakly-connected nodes found - possible documentation gaps or missing edges._
