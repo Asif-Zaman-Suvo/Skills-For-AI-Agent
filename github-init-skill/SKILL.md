@@ -8,7 +8,7 @@ Use this skill whenever the user wants to initialize a new GitHub repository and
 
 | Variable | Example | Notes |
 |---|---|---|
-| `REPO_NAME` | `realtime-event-hub` | The repository name |
+| `REPO_NAME` | _(from user)_ | Repository name; different for each project — parse from the request |
 | `ACCOUNT_TYPE` | `personal` or `office` | Determines which SSH host to use |
 | `GITHUB_USERNAME` | `Asif-Zaman-Suvo` | GitHub username |
 
@@ -74,13 +74,18 @@ Host office
 
 ## Example (filled in)
 
+Substitute the real `REPO_NAME`, `GITHUB_USERNAME`, and SSH host (`personal` vs `office`) before running:
+
 ```bash
-echo "# realtime-event-hub" >> README.md
+echo "# <REPO_NAME>" >> README.md
 git init
 git add README.md
 git commit -m "first commit"
 git branch -M main
-git remote add origin git@personal:Asif-Zaman-Suvo/realtime-event-hub.git
+# Personal:
+git remote add origin git@personal:<GITHUB_USERNAME>/<REPO_NAME>.git
+# Office:
+# git remote add origin git@office:<GITHUB_USERNAME>/<REPO_NAME>.git
 git push -u origin main
 ```
 
@@ -88,11 +93,10 @@ git push -u origin main
 
 ## How to Use in Cursor
 
-When the user says something like:
+When the user asks to create or initialize a new GitHub repo and push it (for example: "initialize a new repo named `my-project` on my personal GitHub account"), do this:
 
-> "new repo initialize koro, name hobe `my-project`, personal account e"
+1. **`REPO_NAME`** — Take from the user’s message (the repo / project name they want). It is different for every project; never reuse a name from an old example.
+2. **`ACCOUNT_TYPE`** — `personal` or `office`, from what they said or ask if unclear.
+3. **`GITHUB_USERNAME`** — From the **Variables** section after you confirm with the user (or their stated handle). Do not assume a fixed username.
 
-Run the above commands with:
-- `REPO_NAME` = `my-project`
-- `ACCOUNT_TYPE` = `personal`
-- `GITHUB_USERNAME` = `Asif-Zaman-Suvo`
+Then run the steps in **Commands to Run**, replacing placeholders with those values and choosing the `personal` or `office` `git remote add` line to match `ACCOUNT_TYPE`.
