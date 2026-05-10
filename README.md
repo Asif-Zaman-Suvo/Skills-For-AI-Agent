@@ -7,10 +7,37 @@ Each skill is a **folder** containing a **`SKILL.md`** with YAML frontmatter (`n
 ## Quick start
 
 1. **Clone** this repository (or copy the skill folders you care about).
-2. **Install skills** where Cursor loads them — for example your user skills directory (see Cursor docs for the current path, e.g. `~/.cursor/skills-cursor/…`) or project-specific rules/skills.
-3. **Start with** [`using-agent-skills`](using-agent-skills/SKILL.md): it describes how to pick the right skill for a given task.
+2. **Cursor:** **Install skills** where Cursor resolves them — for example your user skills directory (see [Cursor Agent Skills docs](https://docs.cursor.com) for paths, e.g. `~/.cursor/skills-cursor/…`), or keep them in-repo and wire them via project rules/skills.
+3. **Claude:** Use the **same files** via Project instructions, attachments, or `CLAUDE.md` — see [Using these skills in Cursor and Claude](#using-these-skills-in-cursor-and-claude) below (no Cursor install needed).
+4. **Start with** [`using-agent-skills`](using-agent-skills/SKILL.md): how to pick the right skill for a task.
 
-Skills are invoked when their description matches the user’s request, or when you explicitly ask the agent to follow a named skill.
+## Using these skills in **Cursor** and **Claude**
+
+Each skill is just instructions in **`SKILL.md`** (often with YAML frontmatter). You can reuse the **same files** everywhere; **only Cursor** loads them automatically when they sit in a configured Cursor skills location.
+
+### Cursor
+
+1. **Install** skill folders where Cursor resolves agent skills — commonly under `~/.cursor/` (e.g. paths like `~/.cursor/skills-cursor/` for user skills); exact paths and UI differ by Cursor version — use [Cursor Agent Skills docs](https://docs.cursor.com) as the source of truth.
+2. Alternatively, keep skills **inside this repo** and wire them through **project rules** or your team’s Cursor setup so agents can read them consistently.
+3. In chat, rely on automatic matching from the skill **`description`** in frontmatter, or say explicitly: **follow `<skill-folder>` / open `that-skill/SKILL.md`**.
+
+In Cursor, skills are invoked when that description matches your request or when you name the skill explicitly.
+
+### Claude (web / app)
+
+Claude does **not** read your `~/.cursor` tree by default. To use these playbooks:
+
+- **Projects:** Add the repo (or copies of skill folders) to the project **knowledge base**, or paste the contents of **`SKILL.md`** into **project instructions**.
+- **Per chat:** Paste a skill’s body, attach **`SKILL.md`**, or point the model at the file in your workspace if your client supports file/context attachment.
+- **Tip:** YAML frontmatter is for tooling; Claude follows the Markdown body the same whether or not Cursor parsed the frontmatter.
+
+### Claude Code (CLI / IDE extension)
+
+Treat each **`SKILL.md`** as reusable policy: copy the sections you care about into **`CLAUDE.md`**, workspace docs, or whatever persistent instructions that environment reads for your repo.
+
+---
+
+**Summary:** **Cursor** — install skills where Cursor resolves them (and optionally rules). **Claude ecosystem** — same Markdown, wired in via Project instructions, chat attachments, **`CLAUDE.md`**, or docs in-repo.
 
 ## What’s included
 
