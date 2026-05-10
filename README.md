@@ -59,7 +59,7 @@ Rough flow (see `using-agent-skills` for the full decision tree):
 | Security | [`security-auditor`](security-auditor/SKILL.md), [`security-and-hardening`](security-and-hardening/SKILL.md) |
 | Performance | [`performance-optimization`](performance-optimization/SKILL.md) |
 | Simplification | [`code-simplification`](code-simplification/SKILL.md) |
-| Git | [`git-workflow-and-versioning`](git-workflow-and-versioning/SKILL.md) |
+| Git | [`git-workflow-and-versioning`](git-workflow-and-versioning/SKILL.md), [`github-init-skill`](github-init-skill/SKILL.md) (new repo + first push) |
 | CI/CD | [`ci-cd-and-automation`](ci-cd-and-automation/SKILL.md) |
 | Docs / ADRs | [`documentation-and-adrs`](documentation-and-adrs/SKILL.md) |
 | Deprecation | [`deprecation-and-migration`](deprecation-and-migration/SKILL.md) |
