@@ -3,11 +3,18 @@ name: debugging-and-error-recovery
 description: Guides systematic root-cause debugging. Use when tests fail, builds break, behavior doesn't match expectations, or you encounter any unexpected error. Use when you need a systematic approach to finding and fixing the root cause rather than guessing.
 ---
 
-# Debugging and Error Recovery
-
-## Overview
+# Debugging and Error Recovery Skill
 
 Systematic debugging with structured triage. When something breaks, stop adding features, preserve evidence, and follow a structured process to find and fix the root cause. Guessing wastes time. The triage checklist works for test failures, build errors, runtime bugs, and production incidents.
+
+## What This Skill Does
+
+1. Stops feature work and preserves evidence (logs, repro, bisect hints) before changing code.
+2. Runs structured triage (isolate, minimize, reproduce) instead of random edits.
+3. Uses targeted techniques (bisect, binary search in code, error-specific patterns) to find root cause.
+4. Verifies the fix with tests or checks and watches for regressions.
+
+---
 
 ## When to Use
 

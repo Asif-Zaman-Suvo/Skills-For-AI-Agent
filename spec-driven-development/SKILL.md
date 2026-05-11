@@ -3,11 +3,18 @@ name: spec-driven-development
 description: Creates specs before coding. Use when starting a new project, feature, or significant change and no specification exists yet. Use when requirements are unclear, ambiguous, or only exist as a vague idea.
 ---
 
-# Spec-Driven Development
-
-## Overview
+# Spec-Driven Development Skill
 
 Write a structured specification before writing any code. The spec is the shared source of truth between you and the human engineer — it defines what we're building, why, and how we'll know it's done. Code without a spec is guessing.
+
+## What This Skill Does
+
+1. Produces a structured spec (scope, requirements, success criteria) before implementation.
+2. Gates progress: no coding until the spec is agreed for the current slice.
+3. Surfaces ambiguities, risks, and non-goals explicitly in the document.
+4. Keeps the spec as the arbiter when implementation questions arise.
+
+---
 
 ## When to Use
 

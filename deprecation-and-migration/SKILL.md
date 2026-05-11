@@ -3,13 +3,20 @@ name: deprecation-and-migration
 description: Manages deprecation and migration. Use when removing old systems, APIs, or features. Use when migrating users from one implementation to another. Use when deciding whether to maintain or sunset existing code.
 ---
 
-# Deprecation and Migration
-
-## Overview
+# Deprecation and Migration Skill
 
 Code is a liability, not an asset. Every line of code has ongoing maintenance cost — bugs to fix, dependencies to update, security patches to apply, and new engineers to onboard. Deprecation is the discipline of removing code that no longer earns its keep, and migration is the process of moving users safely from the old to the new.
 
 Most engineering organizations are good at building things. Few are good at removing them. This skill addresses that gap.
+
+## What This Skill Does
+
+1. Decides when to deprecate vs maintain, and whether deprecation is advisory or compulsory.
+2. Plans migrations (dual-write, backfill, cutover, rollback) with explicit consumer communication.
+3. Executes removal without stranding users, data, or undeleted zombie paths.
+4. Verifies behavior, metrics, and tests through the transition and after cutover.
+
+---
 
 ## When to Use
 

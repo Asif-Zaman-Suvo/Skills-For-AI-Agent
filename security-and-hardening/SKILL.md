@@ -3,11 +3,18 @@ name: security-and-hardening
 description: Hardens code against vulnerabilities. Use when handling user input, authentication, data storage, or external integrations. Use when building any feature that accepts untrusted data, manages user sessions, or interacts with third-party services.
 ---
 
-# Security and Hardening
-
-## Overview
+# Security and Hardening Skill
 
 Security-first development practices for web applications. Treat every external input as hostile, every secret as sacred, and every authorization check as mandatory. Security isn't a phase — it's a constraint on every line of code that touches user data, authentication, or external systems.
+
+## What This Skill Does
+
+1. Enforces boundary rules (validation, encoding, parameterized queries, HTTPS) at every trust boundary.
+2. Designs authn/authz, sessions, and secrets handling using least privilege and safe defaults.
+3. Calls out items that need explicit human approval (crypto, legal, infra) before implementation.
+4. Reviews changes for OWASP-style failure modes and dependency exposure.
+
+---
 
 ## When to Use
 

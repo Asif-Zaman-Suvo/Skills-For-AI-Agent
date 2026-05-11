@@ -3,13 +3,20 @@ name: code-simplification
 description: Simplifies code for clarity. Use when refactoring code for clarity without changing behavior. Use when code works but is harder to read, maintain, or extend than it should be. Use when reviewing code that has accumulated unnecessary complexity.
 ---
 
-# Code Simplification
+# Code Simplification Skill
 
 > Inspired by the [Claude Code Simplifier plugin](https://github.com/anthropics/claude-plugins-official/blob/main/plugins/code-simplifier/agents/code-simplifier.md). Adapted here as a model-agnostic, process-driven skill for any AI coding agent.
 
-## Overview
-
 Simplify code by reducing complexity while preserving exact behavior. The goal is not fewer lines — it's code that is easier to read, understand, modify, and debug. Every simplification must pass a simple test: "Would a new team member understand this faster than the original?"
+
+## What This Skill Does
+
+1. Understands existing behavior and tests before touching structure or names.
+2. Reduces nesting, duplication, and accidental complexity while preserving semantics.
+3. Validates each step with tests and/or behavioral checks — no silent behavior drift.
+4. Stops when clarity wins without chasing novelty or micro-optimizations.
+
+---
 
 ## When to Use
 

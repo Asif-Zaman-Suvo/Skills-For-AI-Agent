@@ -3,11 +3,18 @@ name: performance-optimization
 description: Optimizes application performance. Use when performance requirements exist, when you suspect performance regressions, or when Core Web Vitals or load times need improvement. Use when profiling reveals bottlenecks that need fixing.
 ---
 
-# Performance Optimization
-
-## Overview
+# Performance Optimization Skill
 
 Measure before optimizing. Performance work without measurement is guessing — and guessing leads to premature optimization that adds complexity without improving what matters. Profile first, identify the actual bottleneck, fix it, measure again. Optimize only what measurements prove matters.
+
+## What This Skill Does
+
+1. Establishes budgets and baselines (RUM, synthetic, or APM) before changing code.
+2. Profiles to find the real bottleneck instead of optimizing assumptions.
+3. Applies targeted fixes and re-measures to prove impact and avoid regressions.
+4. Documents trade-offs when complexity is introduced for speed.
+
+---
 
 ## When to Use
 

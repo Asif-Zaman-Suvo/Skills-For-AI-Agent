@@ -3,11 +3,18 @@ name: git-workflow-and-versioning
 description: Structures git workflow practices. Use when making any code change. Use when committing, branching, resolving conflicts, or when you need to organize work across multiple parallel streams.
 ---
 
-# Git Workflow and Versioning
-
-## Overview
+# Git Workflow and Versioning Skill
 
 Git is your safety net. Treat commits as save points, branches as sandboxes, and history as documentation. With AI agents generating code at high speed, disciplined version control is the mechanism that keeps changes manageable, reviewable, and reversible.
+
+## What This Skill Does
+
+1. Chooses branching and integration practices (e.g. trunk-based) suited to team size and risk.
+2. Keeps commits atomic, messages descriptive, and history easy to bisect and review.
+3. Resolves conflicts and rebases without losing intent or mangling shared history.
+4. Coordinates parallel workstreams so main stays deployable.
+
+---
 
 ## When to Use
 

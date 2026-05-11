@@ -3,11 +3,18 @@ name: planning-and-task-breakdown
 description: Breaks work into ordered tasks. Use when you have a spec or clear requirements and need to break work into implementable tasks. Use when a task feels too large to start, when you need to estimate scope, or when parallel work is possible.
 ---
 
-# Planning and Task Breakdown
-
-## Overview
+# Planning and Task Breakdown Skill
 
 Decompose work into small, verifiable tasks with explicit acceptance criteria. Good task breakdown is the difference between an agent that completes work reliably and one that produces a tangled mess. Every task should be small enough to implement, test, and verify in a single focused session.
+
+## What This Skill Does
+
+1. Turns a spec into ordered tasks with clear acceptance criteria and estimates of risk.
+2. Surfaces dependencies, unknowns, and parallelizable work early.
+3. Keeps tasks small enough to implement and verify in one focused session.
+4. Aligns task order with integration points and learning (spikes) where needed.
+
+---
 
 ## When to Use
 

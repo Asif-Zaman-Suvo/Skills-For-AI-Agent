@@ -3,11 +3,18 @@ name: test-driven-development
 description: Drives development with tests. Use when implementing any logic, fixing any bug, or changing any behavior. Use when you need to prove that code works, when a bug report arrives, or when you're about to modify existing functionality.
 ---
 
-# Test-Driven Development
-
-## Overview
+# Test-Driven Development Skill
 
 Write a failing test before writing the code that makes it pass. For bug fixes, reproduce the bug with a test before attempting a fix. Tests are proof — "seems right" is not done. A codebase with good tests is an AI agent's superpower; a codebase without tests is a liability.
+
+## What This Skill Does
+
+1. Writes or extends a failing test that captures desired behavior or a reproduced bug.
+2. Implements the smallest change to pass the test (red–green–refactor).
+3. Refactors with tests green to improve design without changing behavior.
+4. Chooses the right level (unit vs integration) for the behavior under test.
+
+---
 
 ## When to Use
 

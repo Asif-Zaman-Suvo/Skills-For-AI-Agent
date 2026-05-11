@@ -3,15 +3,17 @@ name: idea-refine
 description: Refines ideas iteratively. Refine ideas through structured divergent and convergent thinking. Use "idea-refine" or "ideate" to trigger.
 ---
 
-# Idea Refine
+# Idea Refine Skill
 
 Refines raw ideas into sharp, actionable concepts worth building through structured divergent and convergent thinking.
 
-## How It Works
+## What This Skill Does
 
-1.  **Understand & Expand (Divergent):** Restate the idea, ask sharpening questions, and generate variations.
-2.  **Evaluate & Converge:** Cluster ideas, stress-test them, and surface hidden assumptions.
-3.  **Sharpen & Ship:** Produce a concrete markdown one-pager moving work forward.
+1. **Understand & expand (divergent):** Restate the idea, ask sharpening questions, and generate variations.
+2. **Evaluate & converge:** Cluster ideas, stress-test them, and surface hidden assumptions.
+3. **Sharpen & ship:** Produce a concrete markdown one-pager that moves work forward.
+
+---
 
 ## Usage
 

@@ -3,11 +3,20 @@ name: ci-cd-and-automation
 description: Automates CI/CD pipeline setup. Use when setting up or modifying build and deployment pipelines. Use when you need to automate quality gates, configure test runners in CI, or establish deployment strategies.
 ---
 
-# CI/CD and Automation
-
-## Overview
+# CI/CD and Automation Skill
 
 Automate quality gates so that no change reaches production without passing tests, lint, type checking, and build. CI/CD is the enforcement mechanism for every other skill — it catches what humans and agents miss, and it does so consistently on every single change.
+
+## What This Skill Does
+
+1. Defines a quality-gate pipeline (lint, types, tests, build, security scans as appropriate) for every change.
+2. Shifts checks left so failures are cheap and fast to fix.
+3. Aligns deployment strategy with small batches, rollbacks, and observable releases.
+4. Debugs and hardens CI when flakes, timeouts, or environment drift appear.
+
+---
+
+## Overview
 
 **Shift Left:** Catch problems as early in the pipeline as possible. A bug caught in linting costs minutes; the same bug caught in production costs hours. Move checks upstream — static analysis before tests, tests before staging, staging before production.
 

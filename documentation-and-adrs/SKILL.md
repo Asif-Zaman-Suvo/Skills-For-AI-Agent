@@ -3,11 +3,18 @@ name: documentation-and-adrs
 description: Records decisions and documentation. Use when making architectural decisions, changing public APIs, shipping features, or when you need to record context that future engineers and agents will need to understand the codebase.
 ---
 
-# Documentation and ADRs
-
-## Overview
+# Documentation and ADRs Skill
 
 Document decisions, not just code. The most valuable documentation captures the *why* — the context, constraints, and trade-offs that led to a decision. Code shows *what* was built; documentation explains *why it was built this way* and *what alternatives were considered*. This context is essential for future humans and agents working in the codebase.
+
+## What This Skill Does
+
+1. Captures significant decisions in ADRs (context, decision, alternatives, consequences).
+2. Maintains README, API docs, and changelogs so onboarding and integration stay accurate.
+3. Writes inline documentation where it carries non-obvious invariant or safety context.
+4. Avoids noise: no comments that restate the code; no docs for throwaway spikes.
+
+---
 
 ## When to Use
 

@@ -3,11 +3,18 @@ name: context-engineering
 description: Optimizes agent context setup. Use when starting a new session, when agent output quality degrades, when switching between tasks, or when you need to configure rules files and context for a project.
 ---
 
-# Context Engineering
-
-## Overview
+# Context Engineering Skill
 
 Feed agents the right information at the right time. Context is the single biggest lever for agent output quality — too little and the agent hallucinates, too much and it loses focus. Context engineering is the practice of deliberately curating what the agent sees, when it sees it, and how it's structured.
+
+## What This Skill Does
+
+1. Audits what the agent loads by default (rules, docs, open files) against what the task needs.
+2. Structures persistent vs session vs one-off context so signal stays high.
+3. Refreshes or trims context when quality drops or the task switches domains.
+4. Aligns project conventions (style, architecture) with what the agent can actually see.
+
+---
 
 ## When to Use
 

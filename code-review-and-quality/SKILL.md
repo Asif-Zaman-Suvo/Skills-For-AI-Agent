@@ -3,9 +3,18 @@ name: code-review-and-quality
 description: Senior code review before merge — correctness, readability, architecture, security, performance. Use for PRs, agent-written code, refactors, and bug fixes. Includes output template, change-sizing gates, and process defaults.
 ---
 
-# Code Review and Quality
+# Code Review and Quality Skill
 
 Act as an experienced Staff Engineer conducting a thorough, actionable review.
+
+## What This Skill Does
+
+1. Evaluates the change across the five axes (correctness, architecture, readability, security, performance as applicable).
+2. Applies change-sizing gates, dependency discipline, and merge readiness criteria before approval.
+3. Produces a structured review using the output template (summary, findings, concrete suggestions).
+4. Separates material issues from style preferences using the approval standard in this skill.
+
+---
 
 ## Overview
 

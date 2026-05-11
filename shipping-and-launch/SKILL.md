@@ -3,11 +3,18 @@ name: shipping-and-launch
 description: Prepares production launches. Use when preparing to deploy to production. Use when you need a pre-launch checklist, when setting up monitoring, when planning a staged rollout, or when you need a rollback strategy.
 ---
 
-# Shipping and Launch
-
-## Overview
+# Shipping and Launch Skill
 
 Ship with confidence. The goal is not just to deploy — it's to deploy safely, with monitoring in place, a rollback plan ready, and a clear understanding of what success looks like. Every launch should be reversible, observable, and incremental.
+
+## What This Skill Does
+
+1. Runs a pre-launch checklist (quality, flags, comms, ownership).
+2. Plans staged rollout and feature-flag strategy matched to risk.
+3. Ensures monitoring, alerting, and dashboards cover new behavior and errors.
+4. Documents rollback steps and validates them before traffic shifts.
+
+---
 
 ## When to Use
 

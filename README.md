@@ -60,7 +60,7 @@ Rough flow (see [using-agent-skills](using-agent-skills/SKILL.md) for the full d
 | Security | [security-auditor](security-auditor/SKILL.md), [security-and-hardening](security-and-hardening/SKILL.md) |
 | Performance | [performance-optimization](performance-optimization/SKILL.md) |
 | Simplification | [code-simplification](code-simplification/SKILL.md) |
-| Git | [git-workflow-and-versioning](git-workflow-and-versioning/SKILL.md), [github-init-skill](github-init-skill/SKILL.md) |
+| Git | [git-workflow-and-versioning](git-workflow-and-versioning/SKILL.md), [git-commit-push](git-commit-push/SKILL.md), [github-init-skill](github-init-skill/SKILL.md) |
 | CI/CD | [ci-cd-and-automation](ci-cd-and-automation/SKILL.md) |
 | Docs / ADRs | [documentation-and-adrs](documentation-and-adrs/SKILL.md) |
 | Deprecation | [deprecation-and-migration](deprecation-and-migration/SKILL.md) |
@@ -73,7 +73,10 @@ The [idea-refine](idea-refine/) skill also includes supporting scripts and refer
 
 ```
 ├── README.md
+├── graphify-out/              # generated knowledge graph (optional; run graphify locally if you maintain code here)
 ├── using-agent-skills/
+│   └── SKILL.md
+├── git-commit-push/
 │   └── SKILL.md
 ├── code-review-and-quality/
 │   └── SKILL.md

@@ -1,17 +1,20 @@
 ---
 name: github-repo-init
-description: >-
-  Initializes a new local Git repository with README, first commit, SSH remote
-  via personal or office GitHub host aliases, and push to main. Use when the
-  user creates a new GitHub repo, performs a first push, or wires a new project
-  to GitHub with a named repository and account type.
+description: Initializes a new local Git repository with README, first commit, SSH remote via personal or office GitHub host aliases, and push to main. Use when the user creates a new GitHub repo, performs a first push, or wires a new project to GitHub with a named repository and account type.
 ---
 
-# GitHub Repository Initialization
-
-## Overview
+# GitHub Repository Initialization Skill
 
 Bootstraps a directory as a git repository and pushes it to GitHub using SSH host aliases in `~/.ssh/config`, so personal and office accounts can use different keys without changing the remote hostname.
+
+## What This Skill Does
+
+1. Confirms SSH host mapping and variables (repo name, account type, username) before running commands.
+2. Initializes git, creates README, and makes the first commit on `main`.
+3. Adds the correct `origin` remote using the mapped host alias and pushes to GitHub.
+4. Surfaces follow-ups if prerequisites (SSH config, auth) are missing.
+
+---
 
 ## When to Use
 

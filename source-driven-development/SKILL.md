@@ -3,11 +3,18 @@ name: source-driven-development
 description: Grounds every implementation decision in official documentation. Use when you want authoritative, source-cited code free from outdated patterns. Use when building with any framework or library where correctness matters.
 ---
 
-# Source-Driven Development
-
-## Overview
+# Source-Driven Development Skill
 
 Every framework-specific code decision must be backed by official documentation. Don't implement from memory — verify, cite, and let the user see your sources. Training data goes stale, APIs get deprecated, best practices evolve. This skill ensures the user gets code they can trust because every pattern traces back to an authoritative source they can check.
+
+## What This Skill Does
+
+1. Looks up current official docs (and version notes) before writing framework-specific code.
+2. Cites or quotes authoritative sources so the user can verify patterns.
+3. Avoids “from memory” APIs and deprecated recipes when correctness depends on version.
+4. Adjusts when the user explicitly trades verification for speed.
+
+---
 
 ## When to Use
 

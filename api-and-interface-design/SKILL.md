@@ -3,11 +3,18 @@ name: api-and-interface-design
 description: Guides stable API and interface design. Use when designing APIs, module boundaries, or any public interface. Use when creating REST or GraphQL endpoints, defining type contracts between modules, or establishing boundaries between frontend and backend.
 ---
 
-# API and Interface Design
-
-## Overview
+# API and Interface Design Skill
 
 Design stable, well-documented interfaces that are hard to misuse. Good interfaces make the right thing easy and the wrong thing hard. This applies to REST APIs, GraphQL schemas, module boundaries, component props, and any surface where one piece of code talks to another.
+
+## What This Skill Does
+
+1. Clarifies consumers, boundaries, and versioning expectations before you design the surface.
+2. Shapes contracts (schemas, types, errors, pagination) so the right usage is easy and misuse is obvious.
+3. Documents evolution paths (deprecation, compatibility) for anything others depend on.
+4. Reviews changes for Hyrum's Law effects and accidental public behavior.
+
+---
 
 ## When to Use
 

@@ -3,11 +3,18 @@ name: browser-testing-with-devtools
 description: Tests in real browsers. Use when building or debugging anything that runs in a browser. Use when you need to inspect the DOM, capture console errors, analyze network requests, profile performance, or verify visual output with real runtime data via Chrome DevTools MCP.
 ---
 
-# Browser Testing with DevTools
-
-## Overview
+# Browser Testing with DevTools Skill
 
 Use Chrome DevTools MCP to give your agent eyes into the browser. This bridges the gap between static code analysis and live browser execution — the agent can see what the user sees, inspect the DOM, read console logs, analyze network requests, and capture performance data. Instead of guessing what's happening at runtime, verify it.
+
+## What This Skill Does
+
+1. Drives verification in a real browser (DOM, console, network) instead of guessing from code alone.
+2. Uses Chrome DevTools MCP (or equivalent) to capture runtime evidence for UI and integration issues.
+3. Profiles and checks performance signals when layout, paint, or Vitals matter.
+4. Confirms fixes with reproducible steps and observed behavior.
+
+---
 
 ## When to Use
 

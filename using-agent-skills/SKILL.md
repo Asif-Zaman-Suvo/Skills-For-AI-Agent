@@ -3,11 +3,18 @@ name: using-agent-skills
 description: Discovers and invokes agent skills. Use when starting a session or when you need to discover which skill applies to the current task. This is the meta-skill that governs how all other skills are discovered and invoked.
 ---
 
-# Using Agent Skills
-
-## Overview
+# Using Agent Skills Skill
 
 Agent Skills is a collection of engineering workflow skills organized by development phase. Each skill encodes a specific process that senior engineers follow. This meta-skill helps you discover and apply the right skill for your current task.
+
+## What This Skill Does
+
+1. Maps an incoming task to the right phase-specific skill (or combination) using the discovery tree.
+2. Enforces cross-skill operating behaviors (assumptions, confusion handling, scope, verification).
+3. Names failure modes to avoid when executing any skill in this collection.
+4. Keeps skill invocation explicit when automatic matching is ambiguous.
+
+---
 
 ## Skill Discovery
 
@@ -31,6 +38,7 @@ Task arrives
     │   ├── Security concerns? ───────→ security-and-hardening
     │   └── Performance concerns? ────→ performance-optimization
     ├── Committing/branching? ─────────→ git-workflow-and-versioning
+    ├── Conventional commit + push? ───→ git-commit-push
     ├── CI/CD pipeline work? ──────────→ ci-cd-and-automation
     ├── Writing docs/ADRs? ───────────→ documentation-and-adrs
     └── Deploying/launching? ─────────→ shipping-and-launch
